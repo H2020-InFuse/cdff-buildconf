@@ -1,7 +1,7 @@
 ## Quick Instructions (also works for ubuntu:latest docker container from dockerhub.com):
 
     apt-get update
-    apt-get install -y build-essential ruby ruby-dev sudo wget
+    apt-get install -y build-essential ruby ruby-dev python sudo wget
     
     wget http://rock-robotics.org/autoproj_bootstrap
     # If you have no write access to this repository:
