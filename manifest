@@ -6,8 +6,7 @@
 # package_sets are defining software sources and how to build them
 package_sets:
    - github: H2020-InFuse/cdff-package_set
-   - github: envire/envire-package_set
-#   - github: rock-core/compilerspeedup-package_set
+   - github: rock-core/compilerspeedup-package_set
 
 # The Layout defines which of the packages withing the package sets
 # (including their dependencies) should be installed, 
