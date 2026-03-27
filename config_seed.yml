@@ -20,6 +20,7 @@ ROCK_FLAVOR: master
 ROCK_BRANCH: master
 typelib_cxx_loader: castxml
 USE_PYTHON: true
+python_executable: "/usr/bin/python3"
 USE_OCL: false
 rtt_target: gnulinux
 rtt_corba_implementation: omniorb
