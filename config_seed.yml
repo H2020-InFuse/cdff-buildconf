@@ -27,3 +27,5 @@ rtt_corba_implementation: omniorb
 NDLCOM_ROBOTCONFIG: Coyote3Config
 use_default_config: true
 textlog: false
+USE_PYTHON_VENV: true
+PYTHON_UPGRADE_PIP: false

@@ -1,0 +1,4 @@
+overrides:
+  - external/osgQt:
+      github: openscenegraph/osgQt
+      tag: 3.5.7
