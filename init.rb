@@ -24,6 +24,8 @@
 #
 
 
+Autoproj.config.load_config_once("config_seed.yml")
+
 #only needed while on dfki server
 require 'autoproj/git_server_configuration'
 #Autoproj.git_server_configuration('SPACEAPP', 'gitlab.spaceapplications.com', :fallback_to_http => false, default: 'http,ssh', disabled_methods: 'http,git')
