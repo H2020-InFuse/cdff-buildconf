@@ -8,8 +8,8 @@
 - orocos.rb:
     branch: master
 
-- base/types:
-    branch: master
+#- base/types:
+#    branch: master
 - base/orogen/types:
     branch: master
 - tools/logger:

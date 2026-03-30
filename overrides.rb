@@ -11,16 +11,6 @@
 #
 # See config.yml to set the prefix:/opt/autoproj/2.0 globally for all packages.
 
-# Ensure all packages use the workspace-installed Boost 1.66 headers AND libs,
-# not the system Boost 1.83 (which would cause an ABI mismatch with the 1.66 headers
-# that are picked up via CPATH=/opt/workspace/install/include).
-Autoproj.env_set 'BOOST_ROOT', "#{ENV['AUTOPROJ_CURRENT_ROOT']}/install"
-Autobuild::Package.each do |_, pkg|
-    next unless pkg.kind_of?(Autobuild::CMake)
-    pkg.define 'BOOST_ROOT', "#{ENV['AUTOPROJ_CURRENT_ROOT']}/install"
-    pkg.define 'Boost_NO_SYSTEM_PATHS', 'TRUE'
-end
-
 Autobuild::Package['cdff/CDFF'].define 'BUILD_SHARED_LIBS', 'TRUE'
 Autoproj.env_add "CDFF", "$AUTOPROJ_CURRENT_ROOT/cdff/CDFF/build"
 # HACK: should be removed when libraries of CDFF are installed correctly

@@ -20,6 +20,7 @@ ROCK_FLAVOR: master
 ROCK_BRANCH: master
 typelib_cxx_loader: castxml
 USE_PYTHON: true
+CDFF_EXTERNAL_SOURCE_INSTALL: required
 python_executable: "/usr/bin/python3"
 USE_OCL: false
 rtt_target: gnulinux
