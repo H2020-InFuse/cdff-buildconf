@@ -1,6 +1,0 @@
-overrides:
-  - gui/vizkit3d_plugin_information:
-      github: envire/gui-vizkit3d_plugin_information
-      branch: feature/qt5
-      patches:
-        - [$AUTOPROJ_SOURCE_DIR/patches/vizkit3d_plugin_information-qt5-widgets.patch, 1]

@@ -1,7 +1,4 @@
 ---
-- gui/vizkit3d:
-  github: rock-core/gui-vizkit3d
-  branch: qt5
 - envire/envire_visualizer:
   github: envire/envire-envire_visualizer
   branch: feature/qt5
