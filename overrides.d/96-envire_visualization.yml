@@ -5,10 +5,6 @@
 - types/sensor_samples_support:
   github: H2020-InFuse/types-sensor_samples_support
   branch: master
-- envire/envire_urdf:
-  branch: devel
-- envire/envire_visualizer:
-  branch: master
 - slam/maps:
   branch: q_moc
 #- base/types:

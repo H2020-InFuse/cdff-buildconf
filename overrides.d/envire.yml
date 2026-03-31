@@ -1,9 +1,0 @@
----
-
-#- base/types:
-#    branch: TransFormWithCovarianceViz
-- base/numeric:
-    branch: master
-- base/console_bridge:
-    branch: master
-

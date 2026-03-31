@@ -1,5 +1,0 @@
----
-- drivers/orogen/servo_dynamixel:
-    branch: master
-- drivers/dynamixel:
-    branch: master

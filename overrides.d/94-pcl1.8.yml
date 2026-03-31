@@ -10,9 +10,6 @@
 - gui/vizkit3d_pcl:
   branch: entern
 
-- gui/vizkit:
-    branch: master
-
 - gui/vizkit3d:
     github: envire/gui-vizkit3d
     branch: osgviz
