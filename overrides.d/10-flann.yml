@@ -1,4 +1,0 @@
-overrides:
-  - cdff/external/flann:
-      github: flann-lib/flann
-      tag: 1.9.2
