@@ -1,0 +1,7 @@
+---
+# Envire-related overrides.
+- tools/smurf:
+  # Branch 22.04 adds default constructors required by ENVIRE_REGISTER_ITEM/
+  # BOOST_CLASS_EXPORT, and uses base::Pose for Collidable/Visual origins
+  # (compatible with Ubuntu 22.04+).
+  branch: "22.04"

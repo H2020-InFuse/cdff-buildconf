@@ -1,0 +1,11 @@
+---
+# Qt5 compatibility overrides.
+# These branches contain Qt5 support not yet merged to the default branch.
+- envire/envire_visualizer:
+  github: envire/envire-envire_visualizer
+  branch: feature/qt5
+- external/osgQt:
+  github: openscenegraph/osgQt
+  tag: 3.5.7
+- cdff/CDFF_dev:
+  branch: python3-qt5
