@@ -6,3 +6,5 @@
   tag: 3.5.7
 - cdff/CDFF_dev:
   branch: python3-qt5
+- infuse/ASN_Viz:
+  branch: 2026_restart

@@ -6,3 +6,9 @@
   # preserving the TypeVisitor-based C++ implementation and Python conversion layer.
   github: H2020-InFuse/tools-pocolog2msgpack
   branch: infuse_update
+- cdff/CDFF:
+  github: H2020-InFuse/cdff
+  branch: 2026_restart
+- cdff/CDFF_dev:
+  github: H2020-InFuse/cdff_dev
+  branch: 2026_restart
