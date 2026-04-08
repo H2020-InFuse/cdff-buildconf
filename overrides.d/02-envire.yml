@@ -1,14 +1,10 @@
 ---
 # Envire-related overrides.
 - envire/envire_visualizer:
-  # Qt5 fix: replace QAction::activated (removed in Qt5) with QAction::triggered.
-  # PR #14 (feature/qt4-qt5) added CMake Qt5 support but did not fix the signal usage.
-  branch: qt5fix
-- envire/envire_core:
-  # Qt5 fix: wrap VizkitQtPluginHeaderDecls with #if QT_VERSION >= 0x050000 so the
-  # Qt5 MOC generates plugin metadata for EnvireGraphStructureVisualization.
-  # Without this libenvire_core-viz-qt5.so fails to load ("Failed to extract plugin meta data").
-  branch: qt5fix
+  # qt5fix: replace QAction::activated (removed in Qt5) with QAction::triggered.
+  # vertex_missing_fix: guard tree.at() calls with vertex_not_found bool to prevent
+  # std::out_of_range crash when a frame is in the graph but not in the spanning tree.
+  branch: vertex_missing_fix
 - tools/smurf:
   # Branch 22.04 adds default constructors required by ENVIRE_REGISTER_ITEM/
   # BOOST_CLASS_EXPORT, and uses base::Pose for Collidable/Visual origins
