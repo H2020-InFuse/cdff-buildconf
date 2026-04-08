@@ -1,6 +1,8 @@
 ---
 # Qt5 compatibility overrides.
-# Note: envire_visualizer no longer needs an override — Qt5 support was merged to master (PR #14).
+# Note: envire_visualizer and envire_core are overridden to branch qt5fix in 02-envire.yml.
+# PR #14 (feature/qt4-qt5) added CMake Qt5 support to envire_visualizer but did not fix
+# the QAction::activated→triggered signal issue or the envire_core MOC plugin-metadata gap.
 - external/osgQt:
   github: openscenegraph/osgQt
   tag: 3.5.7
