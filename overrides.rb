@@ -13,6 +13,9 @@
 
 Autobuild::Package['cdff/CDFF'].define 'BUILD_SHARED_LIBS', 'TRUE'
 Autoproj.env_add "CDFF", "$AUTOPROJ_CURRENT_ROOT/cdff/CDFF/build"
+Autoproj.env_set 'CDFFPATH', "$AUTOPROJ_CURRENT_ROOT/cdff/CDFF"
+Autoproj.env_add_path 'PYTHONPATH', "$AUTOPROJ_CURRENT_ROOT/cdff/CDFF_dev"
+Autoproj.env_add_path 'PYTHONPATH', "$AUTOPROJ_CURRENT_ROOT/cdff/CDFF_dev/cdff_dev/dfns"
 # HACK: should be removed when libraries of CDFF are installed correctly
 # obtained, e.g., with ls -d Common/*/ | tr "\n" ":"
 Autoproj.env_add_path 'LD_LIBRARY_PATH', "$CDFF/Common/Converters/:$CDFF/Common/Helpers/:$CDFF/Common/Loggers/:$CDFF/Common/Types/:$CDFF/Common/Validators/:$CDFF/Common/Visualizers/"
